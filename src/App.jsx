@@ -1,9 +1,14 @@
-import './App.css'
+import React from 'react';
+import RandomUsers from './RandomUsers';
+import './App.css'; // Import your CSS file for styling
 
-function App() {
+const App = () => {
   return (
-    <>Empty Project</>
-  )
-}
+    <div className="app">
+      <h1 className="app-title">Random User Details</h1>
+      <RandomUsers />
+    </div>
+  );
+};
 
-export default App
+export default App;
